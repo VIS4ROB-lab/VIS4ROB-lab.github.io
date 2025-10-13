@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Versatile, Robust and Simulatable Multi-Robot SLAM | Vision for Robotics Lab (V4RL)</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Versatile, Robust and Simulatable Multi-Robot SLAM" />
+<meta name="author" content="Mike Liu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones." />
+<meta property="og:description" content="This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones." />
+<link rel="canonical" href="http://localhost:4000/2025/10/13/multirobot.html" />
+<meta property="og:url" content="http://localhost:4000/2025/10/13/multirobot.html" />
+<meta property="og:site_name" content="Vision for Robotics Lab (V4RL)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-10-13T00:00:00+03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Versatile, Robust and Simulatable Multi-Robot SLAM" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Mike Liu"},"url":"http://localhost:4000/2025/10/13/multirobot.html","@type":"BlogPosting","headline":"Versatile, Robust and Simulatable Multi-Robot SLAM","description":"This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.","datePublished":"2025-10-13T00:00:00+03:00","dateModified":"2025-10-13T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/10/13/multirobot.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Vision for Robotics Lab (V4RL)" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Vision for Robotics Lab (V4RL)</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Versatile, Robust and Simulatable Multi-Robot SLAM</h1>
+    <h2 class="post-subtitle p-subname" itemprop="alternateName alternativeHeadline">Semester/Masters Project</h2>
+    <p class="post-meta">
+      <!-- <time class="dt-published" datetime="2025-10-13T00:00:00+03:00" itemprop="datePublished">Oct 13, 2025
+      </time> -->• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Mike Liu</span> (<span class="p-email h-card" itemprop="email">liu.xiangyu@ucy.ac.cy</span>)</span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.</p>
+
+<p><img src="/assets/multirobot.png" alt="" />
+<em>Mapping and navigation of a drone swarm in a clustered forest area [1]</em></p>
+
+<hr />
+
+<h2 id="background">Background</h2>
+
+<p>Recent work on multi-robot systems with collaborative autonomy has made significant strides towards developing robotic teams capable of performing complex tasks in real, complex settings as shown above. Right at the core of such capabilities is the capability to collaboratively perform SLAM (Simultaneous Localization And Mapping) within such multi-agent systems that can operate efficiently and in challenging real-world environments, which is the main goal of this project.</p>
+
+<hr />
+
+<h2 id="description">Description</h2>
+
+<p>The aim of this project is to develop key components of a multi-robot SLAM system that is robust in challenging environments and adaptable to different scenarios, ranging from environmental monitoring to search-and-rescue operations. The envisioned system will research integrating complementary onboard sensor modalities (e.g., cameras, LiDAR, and IMU), machine learning methods, and distributed communication systems to provide precise localization and mapping exhibiting resilience to sensor failure and sufficient efficiency to be deployed onboard small platforms, such as drones. The student will be guided to work towards a system architecture that can enable effective testing and optimization in state-of-the-art simulation engines, with the ultimate goal of reducing the gap between simulated experiments and real tests. The outlook is to create a system that can be employed onboard a small swarm of drones in a real setting.</p>
+
+<hr />
+
+<h2 id="work-packages">Work Packages</h2>
+
+<ul>
+  <li>The work packages of this project involves, literature review of existing research on multi-robot SLAM, develop new SLAM algorithms for identified challenges, and validate algorithms in simulation and with real-world experiments</li>
+</ul>
+
+<hr />
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>The students taking this project need to have programming experience with Python and C++, ROS and/or ROS 2</li>
+</ul>
+
+<hr />
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li>[1] Zhou, Xin, et al. “Swarm of micro flying robots in the wild.” Science Robotics 7.66 (2022): eabm5954.</li>
+</ul>
+
+  </div><a class="u-url" href="/2025/10/13/multirobot.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Vision for Robotics Lab (V4RL)</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Professor Margarita Chli</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/VIS4ROB-lab"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">VIS4ROB-lab</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Website for V4RL student projects
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

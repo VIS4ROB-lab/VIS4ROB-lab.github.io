@@ -1,15 +1,13 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: Vision for Robotics Lab (V4RL)
+author: Professor Margarita Chli
+#email: v4rlteam@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Website for V4RL student projects
 
 # social links
-twitter_username: jekyllrb
-github_username:  jekyll
-rss: rss
+#twitter_username: jekyllrb
+github_username:  VIS4ROB-lab
+#rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -27,7 +25,7 @@ rss: rss
 #   instance: example.com
 
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -36,7 +34,9 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
+header_pages:
+  - index.md
+#  - index.md
 # - about.html
 
 # Build settings

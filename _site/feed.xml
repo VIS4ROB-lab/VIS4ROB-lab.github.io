@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-13T17:53:06+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vision for Robotics Lab (V4RL)</title><subtitle>Website for V4RL student projects
+</subtitle><author><name>Professor Margarita Chli</name></author><entry><title type="html">Odometry and Mapping in Dynamic Environments</title><link href="http://localhost:4000/2025/10/13/dynamic.html" rel="alternate" type="text/html" title="Odometry and Mapping in Dynamic Environments" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/dynamic</id><content type="html" xml:base="http://localhost:4000/2025/10/13/dynamic.html">&lt;p&gt;The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/dynablox.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Detecting dynamic objects in a 3D map using Dynablox [1]&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;Existing lidar-inertial odometry approaches (e.g., FAST-LIO2 [1]) are capable of providing sufficiently accurate pose estimation in structured environments to capture high quality 3D maps of static structures in real-time. However, the presence of dynamic objects in an environment can reduce the accuracy of the odometry estimate and produce noisy artifacts in the captured 3D map. Existing approaches to handling dynamic objects [2-4] focus on detecting and filtering them from the captured 3D map but typically operate independently from the odometry pipeline, which means that the dynamic filtering does not improve the pose estimation accuracy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline. The starting point will be investigating whether changes in a set of geometric primitives extracted from the FAST-LIO2 [1] odometry pipeline can be used to detect dynamic objects. The performance of the resulting approach will be evaluated in comparison with existing odometry [1] and dynamic object filtering [2-4] approaches.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;work-packages&quot;&gt;Work Packages&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Literature review of work on lidar-inertial odometry and dynamic object detection&lt;/li&gt;
+  &lt;li&gt;Develop a lidar-inertial odometry approach that can robustly handle dynamic environments&lt;/li&gt;
+  &lt;li&gt;Evaluate the performance of the approach in comparison with existing work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experience with C++ and ROS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[1] W. Xu, Y. Cai, D. He, J. Lin, and F. Zhang, “FAST-LIO2: Fast Direct LiDAR-inertial Odometry,” arXiv, 2021.&lt;/li&gt;
+  &lt;li&gt;[2] L. Schmid, O. Andersson, A. Sulser, P. Pfreundschuh, and R. Siegwart, “Dynablox: Real-Time Detection of Diverse Dynamic Objects in Complex Environments,” IEEE Robotics and Automation Letters, 2023.&lt;/li&gt;
+  &lt;li&gt;[3] D. Duberg, Q. Zhang, M. Jia, and P. Jensfelt, “DUFOMap: Efficient Dynamic Awareness Mapping,” IEEE Robotics and Automation Letters, 2024.&lt;/li&gt;
+  &lt;li&gt;[4] H. Lim, S. Hwang, and H. Myung, “ERASOR: Egocentric Ratio of Pseudo Occupancy-based Dynamic Object Removal for Static 3D Point Cloud Map Building,” IEEE Robotics and Automation Letters, 2021.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Rowan Border</name></author><summary type="html">The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline.</summary></entry><entry><title type="html">LiDAR-Visual-Inertial Odometry with a Unified Representation</title><link href="http://localhost:4000/2025/10/13/lvi.html" rel="alternate" type="text/html" title="LiDAR-Visual-Inertial Odometry with a Unified Representation" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/lvi</id><content type="html" xml:base="http://localhost:4000/2025/10/13/lvi.html">&lt;p&gt;The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fast-livo2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The output of FAST-LIVO2 [1], a state-of-the-art LiDAR-Visual-Inertial mapping approach&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;LiDAR-Visual-Inertial odometry approaches [1-3] aim to overcome the limitations of the individual sensing modalities by estimating a pose from heterogenous measurements. Lidar-inertial odometry often diverges in environments with degenerate geometric structures and visual-inertial odometry can diverge in environments with uniform texture. Many existing lidar-visual-inertial odometry approaches use independent lidar-inertial and visual-inertial pipelines [2-3] to compute odometry estimates that are combined in a joint optimisation to obtain a single pose estimate. These approaches are able to obtain a robust pose estimate in degenerate environments but often underperform lidar-inertial or visual-inertial methods in non-degenerate scenarios due to the complexity of maintaining and combining odometry estimates from multiple representations.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation. The starting point, inspired by FAST-LIVO2 [1], will be to investigate methods for efficiently combining visual patches from camera images with a set of geometric primitives extracted from FAST-LIO2 [4], a lidar-inertial odometry pipeline. The performance of the resulting approach will be evaluated in comparison with existing lidar-visual-inertial odometry approaches.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;work-packages&quot;&gt;Work Packages&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Literature review of work on lidar-visual-inertial odometry&lt;/li&gt;
+  &lt;li&gt;Develop a lidar-visual-inertial odometry approach with a single unified representation&lt;/li&gt;
+  &lt;li&gt;Evaluate the performance of the approach in comparison with existing work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experience with C++ and ROS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[1] C. Zheng et al., “FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry,” IEEE Transactions on Robotics, 2024.&lt;/li&gt;
+  &lt;li&gt;[2] J. Lin and F. Zhang, “R3LIVE++: A Robust, Real-time, Radiance reconstruction package with a tightly-coupled LiDAR-Inertial-Visual state Estimator,” IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024.&lt;/li&gt;
+  &lt;li&gt;[3] T. Shan, B. Englot, C. Ratti, and D. Rus, “LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping,” in IEEE International Conference on Robotics and Automation, 2021.&lt;/li&gt;
+  &lt;li&gt;[4] W. Xu, Y. Cai, D. He, J. Lin, and F. Zhang, “FAST-LIO2: Fast Direct LiDAR-inertial Odometry,” arXiv, 2021.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Rowan Border</name></author><summary type="html">The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation.</summary></entry><entry><title type="html">Versatile, Robust and Simulatable Multi-Robot SLAM</title><link href="http://localhost:4000/2025/10/13/multirobot.html" rel="alternate" type="text/html" title="Versatile, Robust and Simulatable Multi-Robot SLAM" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/multirobot</id><content type="html" xml:base="http://localhost:4000/2025/10/13/multirobot.html">&lt;p&gt;This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/multirobot.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Mapping and navigation of a drone swarm in a clustered forest area [1]&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;Recent work on multi-robot systems with collaborative autonomy has made significant strides towards developing robotic teams capable of performing complex tasks in real, complex settings as shown above. Right at the core of such capabilities is the capability to collaboratively perform SLAM (Simultaneous Localization And Mapping) within such multi-agent systems that can operate efficiently and in challenging real-world environments, which is the main goal of this project.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The aim of this project is to develop key components of a multi-robot SLAM system that is robust in challenging environments and adaptable to different scenarios, ranging from environmental monitoring to search-and-rescue operations. The envisioned system will research integrating complementary onboard sensor modalities (e.g., cameras, LiDAR, and IMU), machine learning methods, and distributed communication systems to provide precise localization and mapping exhibiting resilience to sensor failure and sufficient efficiency to be deployed onboard small platforms, such as drones. The student will be guided to work towards a system architecture that can enable effective testing and optimization in state-of-the-art simulation engines, with the ultimate goal of reducing the gap between simulated experiments and real tests. The outlook is to create a system that can be employed onboard a small swarm of drones in a real setting.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;work-packages&quot;&gt;Work Packages&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The work packages of this project involves, literature review of existing research on multi-robot SLAM, develop new SLAM algorithms for identified challenges, and validate algorithms in simulation and with real-world experiments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The students taking this project need to have programming experience with Python and C++, ROS and/or ROS 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[1] Zhou, Xin, et al. “Swarm of micro flying robots in the wild.” Science Robotics 7.66 (2022): eabm5954.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mike Liu</name></author><summary type="html">This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.</summary></entry></feed>
