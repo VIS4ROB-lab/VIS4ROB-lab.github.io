@@ -13,22 +13,27 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Projects" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <li>
-        <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span> -->
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+      <li class="post-item" style="display: flex; align-items: center; margin-bottom: 1.5em;">
+        
+        {%- if post.thumbnail -%}
+          <a href="{{ post.url | relative_url }}" style="flex-shrink: 0; margin-right: 1em;">
+            <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}" style="width: 120px; height: 80px; object-fit: cover; border-radius: 8px;">
           </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
         {%- endif -%}
+
+        <div class="post-content">
+          <h3 style="margin: 0;">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts and post.excerpt -%}
+            <p class="post-excerpt" style="margin: 0.5em 0 0;">{{ post.excerpt }}</p>
+          {%- endif -%}
+        </div>
+
       </li>
       {%- endfor -%}
     </ul>
-
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
-
 </div>

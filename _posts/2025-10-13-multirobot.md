@@ -4,6 +4,7 @@ title: "Versatile, Robust and Simulatable Multi-Robot SLAM"
 type: "Semester/Masters Project"
 author: "Mike Liu"
 email: liu.xiangyu@ucy.ac.cy
+thumbnail: /assets/multirobot.png
 ---
 
 This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.
