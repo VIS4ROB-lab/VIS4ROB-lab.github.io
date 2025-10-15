@@ -11,9 +11,22 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time> -->
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span> (<span class="p-email h-card" itemprop="email">{{ page.email }}</span>)</span>
-      {%- endif -%}</p>
+      {%- if page.author1 -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-author h-card" itemprop="name">{{ page.author1 }}</span> 
+        (<span class="p-email h-card" itemprop="email">{{ page.email1 }}</span>)</span>
+      {%- endif -%}
+      {%- if page.author2 -%}
+        , <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-author h-card" itemprop="name">{{ page.author2 }}</span> 
+        (<span class="p-email h-card" itemprop="email">{{ page.email2 }}</span>)</span>
+      {%- endif -%}
+      {%- if page.author3 -%}
+        , <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-author h-card" itemprop="name">{{ page.author3 }}</span> 
+        (<span class="p-email h-card" itemprop="email">{{ page.email3 }}</span>)</span>
+      {%- endif -%}
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

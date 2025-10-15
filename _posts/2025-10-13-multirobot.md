@@ -2,8 +2,12 @@
 layout: post
 title: "Versatile, Robust and Simulatable Multi-Robot SLAM"
 type: "Semester/Masters Project"
-author: "Mike Liu"
-email: liu.xiangyu@ucy.ac.cy
+author1: "Mike Liu"
+email1: liu.xiangyu@ucy.ac.cy
+author2: "Mia Li"
+email2: xinyi.li@ucy.ac.cy
+author3: "Prof. Margarita Chli"
+email3: chli.margarita@ucy.ac.cy
 thumbnail: /assets/multirobot.png
 ---
 

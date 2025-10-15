@@ -7,3 +7,5 @@
 #
 layout: home
 ---
+
+Are you interested in doing your Bachelors or Masters thesis at V4RL? We have the following projects available for students at both UCY and ETH Zurich. Please contact the listed person responsible.

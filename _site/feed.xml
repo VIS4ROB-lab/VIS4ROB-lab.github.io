@@ -1,5 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-14T10:51:14+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vision for Robotics Lab (V4RL)</title><subtitle>Website for V4RL student projects
-</subtitle><author><name>Professor Margarita Chli</name></author><entry><title type="html">Odometry and Mapping in Dynamic Environments</title><link href="http://localhost:4000/2025/10/13/dynamic.html" rel="alternate" type="text/html" title="Odometry and Mapping in Dynamic Environments" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/dynamic</id><content type="html" xml:base="http://localhost:4000/2025/10/13/dynamic.html">&lt;p&gt;The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-10-15T12:07:55+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vision for Robotics Lab (V4RL)</title><subtitle>Website for V4RL student projects
+</subtitle><author><name>Professor Margarita Chli</name></author><entry><title type="html">Continuous-Time Multi-Sensor Odometry in the Wild</title><link href="http://localhost:4000/2025/10/13/ct.html" rel="alternate" type="text/html" title="Continuous-Time Multi-Sensor Odometry in the Wild" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/ct</id><content type="html" xml:base="http://localhost:4000/2025/10/13/ct.html">&lt;p&gt;The goal of this project is to develop a robust, continuous-time multi-sensor odometry system that can handle multi-rate synchronization.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/ct.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Mapping and navigation of a drone swarm in a clustered forest area [1]&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;Multi-sensor odometry estimates a robot’s full 6-DoF pose by fusing complementary data streams—cameras, LiDAR, IMU, and GNSS—each sampled at its own rate. Representing motion as a continuous-time trajectory, rather than as a sequence of discrete poses, simplifies multi-rate synchronization [1,2]. Each modality breaks down under different conditions: visual–inertial odometry drifts during rapid rotations, abrupt illumination changes, or texture-poor scenes, while LiDAR–inertial odometry loses observability in geometrically featureless environments. Recent work [1] proposes a fusion strategy for robust odometry, but it still relies on tightly synchronized sensors.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;The goal of this project is to develop a robust, continuous-time multi-sensor odometry system that can handle multi-rate synchronization. The performance of the resulting approach will be evaluated in comparison with existing multi-sensor odometry approaches.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;work-packages&quot;&gt;Work Packages&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Literature review of work on multi-sensor odometry&lt;/li&gt;
+  &lt;li&gt;Literature review of work on continuous-time trajectory&lt;/li&gt;
+  &lt;li&gt;Design a multi-sensor fusion strategy&lt;/li&gt;
+  &lt;li&gt;Evaluate the performance of the approach in comparison with existing work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experience with C++ and ROS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[1] Cioffi, G., Cieslewski, T., &amp;amp; Scaramuzza, D., “Continuous-time vs. discrete-time vision-based SLAM: A comparative study”, IEEE Robotics and Automation Letters,  2022.&lt;/li&gt;
+  &lt;li&gt;[2] Hug, David, Ignacio Alzugaray, and Margarita Chli., “Hyperion–A Fast, Versatile Symbolic Gaussian Belief Propagation Framework for Continuous-Time SLAM”, European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024.&lt;/li&gt;
+  &lt;li&gt;[3] C. Zheng et al., “FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry”, IEEE Transactions on Robotics, 2024.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Professor Margarita Chli</name></author><summary type="html">The goal of this project is to develop a robust, continuous-time multi-sensor odometry system that can handle multi-rate synchronization.</summary></entry><entry><title type="html">Odometry and Mapping in Dynamic Environments</title><link href="http://localhost:4000/2025/10/13/dynamic.html" rel="alternate" type="text/html" title="Odometry and Mapping in Dynamic Environments" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/dynamic</id><content type="html" xml:base="http://localhost:4000/2025/10/13/dynamic.html">&lt;p&gt;The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/dynablox.png&quot; alt=&quot;&quot; /&gt;
 &lt;em&gt;Detecting dynamic objects in a 3D map using Dynablox [2]&lt;/em&gt;&lt;/p&gt;
@@ -43,7 +87,7 @@
   &lt;li&gt;[2] L. Schmid, O. Andersson, A. Sulser, P. Pfreundschuh, and R. Siegwart, “Dynablox: Real-Time Detection of Diverse Dynamic Objects in Complex Environments,” IEEE Robotics and Automation Letters, 2023.&lt;/li&gt;
   &lt;li&gt;[3] D. Duberg, Q. Zhang, M. Jia, and P. Jensfelt, “DUFOMap: Efficient Dynamic Awareness Mapping,” IEEE Robotics and Automation Letters, 2024.&lt;/li&gt;
   &lt;li&gt;[4] H. Lim, S. Hwang, and H. Myung, “ERASOR: Egocentric Ratio of Pseudo Occupancy-based Dynamic Object Removal for Static 3D Point Cloud Map Building,” IEEE Robotics and Automation Letters, 2021.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Rowan Border</name></author><summary type="html">The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline.</summary></entry><entry><title type="html">LiDAR-Visual-Inertial Odometry with a Unified Representation</title><link href="http://localhost:4000/2025/10/13/lvi.html" rel="alternate" type="text/html" title="LiDAR-Visual-Inertial Odometry with a Unified Representation" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/lvi</id><content type="html" xml:base="http://localhost:4000/2025/10/13/lvi.html">&lt;p&gt;The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Professor Margarita Chli</name></author><summary type="html">The goal of this project is to develop a lidar-inertial odometry approach that tightly integrates dynamic object filtering into the pose estimation and mapping pipeline.</summary></entry><entry><title type="html">LiDAR-Visual-Inertial Odometry with a Unified Representation</title><link href="http://localhost:4000/2025/10/13/lvi.html" rel="alternate" type="text/html" title="LiDAR-Visual-Inertial Odometry with a Unified Representation" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/lvi</id><content type="html" xml:base="http://localhost:4000/2025/10/13/lvi.html">&lt;p&gt;The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/fast-livo2.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;em&gt;The output of FAST-LIVO2 [1], a state-of-the-art LiDAR-Visual-Inertial mapping approach&lt;/em&gt;&lt;/p&gt;
@@ -87,7 +131,7 @@
   &lt;li&gt;[2] J. Lin and F. Zhang, “R3LIVE++: A Robust, Real-time, Radiance reconstruction package with a tightly-coupled LiDAR-Inertial-Visual state Estimator,” IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024.&lt;/li&gt;
   &lt;li&gt;[3] T. Shan, B. Englot, C. Ratti, and D. Rus, “LVI-SAM: Tightly-coupled Lidar-Visual-Inertial Odometry via Smoothing and Mapping,” in IEEE International Conference on Robotics and Automation, 2021.&lt;/li&gt;
   &lt;li&gt;[4] W. Xu, Y. Cai, D. He, J. Lin, and F. Zhang, “FAST-LIO2: Fast Direct LiDAR-inertial Odometry,” arXiv, 2021.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Rowan Border</name></author><summary type="html">The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation.</summary></entry><entry><title type="html">Versatile, Robust and Simulatable Multi-Robot SLAM</title><link href="http://localhost:4000/2025/10/13/multirobot.html" rel="alternate" type="text/html" title="Versatile, Robust and Simulatable Multi-Robot SLAM" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/multirobot</id><content type="html" xml:base="http://localhost:4000/2025/10/13/multirobot.html">&lt;p&gt;This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Professor Margarita Chli</name></author><summary type="html">The goal of this project is to develop a lidar-visual-inertial odometry approach that integrates visual and lidar measurements into a single unified representation.</summary></entry><entry><title type="html">Versatile, Robust and Simulatable Multi-Robot SLAM</title><link href="http://localhost:4000/2025/10/13/multirobot.html" rel="alternate" type="text/html" title="Versatile, Robust and Simulatable Multi-Robot SLAM" /><published>2025-10-13T00:00:00+03:00</published><updated>2025-10-13T00:00:00+03:00</updated><id>http://localhost:4000/2025/10/13/multirobot</id><content type="html" xml:base="http://localhost:4000/2025/10/13/multirobot.html">&lt;p&gt;This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/multirobot.png&quot; alt=&quot;&quot; /&gt;
 &lt;em&gt;Mapping and navigation of a drone swarm in a clustered forest area [1]&lt;/em&gt;&lt;/p&gt;
@@ -126,4 +170,4 @@
 
 &lt;ul&gt;
   &lt;li&gt;[1] Zhou, Xin, et al. “Swarm of micro flying robots in the wild.” Science Robotics 7.66 (2022): eabm5954.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Mike Liu</name></author><summary type="html">This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Professor Margarita Chli</name></author><summary type="html">This project aims to develop multi-robot SLAM capabilities able to perform in such challenging, real environments, forming the basis of navigation autonomy and coordination of a swarm of drones.</summary></entry></feed>
