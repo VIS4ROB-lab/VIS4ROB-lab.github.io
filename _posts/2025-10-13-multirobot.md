@@ -26,7 +26,7 @@ Recent work on multi-robot systems with collaborative autonomy has made signific
 
 ## Description
 
-The aim of this project is to develop key components of a multi-robot SLAM system that is robust in challenging environments and adaptable to different scenarios, ranging from environmental monitoring to search-and-rescue operations. The envisioned system will research integrating complementary onboard sensor modalities (e.g., cameras, LiDAR, and IMU), machine learning methods, and distributed communication systems to provide precise localization and mapping exhibiting resilience to sensor failure and sufficient efficiency to be deployed onboard small platforms, such as drones. The student will be guided to work towards a system architecture that can enable effective testing and optimization in state-of-the-art simulation engines, with the ultimate goal of reducing the gap between simulated experiments and real tests. The outlook is to create a system that can be employed onboard a small swarm of drones in a real setting. 
+What’s better than one robot mapping the world? A whole team doing it together. This project explores how multiple robots can collaborate to localize themselves and build a shared map, both in simulation and real-world scenarios. You’ll work on multi-agent SLAM, communication strategies, and map merging, tackling challenges like consistency and scalability as more robots join the system. The project combines theory with hands-on experimentation, making it perfect if you’re excited by robot swarms, distributed systems, or search-and-rescue applications where teamwork is key. 
 
 ---
 
